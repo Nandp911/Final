@@ -1,1 +1,13 @@
-<p>college-details works!</p>
+<div *ngIf="collegeData;">
+  <img [src]="'http://tetervak.dev.fast.sheridanc.on.ca/exams/angular/images/' + collegeData.image" alt="Sheridan College Image" style="max-width: 100%; height: auto;">
+  <h2>{{ collegeData.name }}</h2>
+  <p>Type: {{ collegeData.type }}</p>
+  <p>Established: {{ collegeData.established }}</p>
+  <div>
+    <h3>Students</h3>
+    <p>Full-time: {{ collegeData.students.fullTime }}</p>
+    <p>Part-time: {{ collegeData.students.partTime }}</p>
+  </div>
+  <p>Location: {{ collegeData.location }}</p>
+</div>
+
