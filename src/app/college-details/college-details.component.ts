@@ -1,10 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-college-details',
   standalone: true,
-  imports: [],
+  imports: [HttpClientModule, CommonModule],
   templateUrl: './college-details.component.html',
   styleUrl: './college-details.component.css'
 })
